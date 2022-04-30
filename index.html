@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="w3.css">
+  <style>
+body {
+  background-color: rgb(221, 148, 148);
+}
+
+h1 {
+  color: white;
+  margin-left: 40px;
+}
+
+h2 {
+  color: rgb(121, 85, 50);
+  margin-left: 40px;
+}
+  </style>
+
+  <title>Resume</title>
+  <script>
+      function sideMenu(){
+        var x = document.getElementById("idsidebar");
+        if(x.className.indexOf("w3-show") == -1){
+          x.className +=" w3-show";
+        } else{
+          x.className = x.className.replace("w3-show", "");
+        }
+      }
+  </script>
+
+</head>
+
+<body>
+  <div class="w3-bar w3-yellow">
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-left">Profile</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-left">Education></a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-left">Backgrounds></a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-left">Training></a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-left">Projects></a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="sideMenu()">&#9776</a>
+  </div>
+
+  <div id="idsidebar" class="w3-bar-block w3-yellow w3-hide w3-hide-large w3-hide-medium">
+    <a href="#" class="w3-bar-item w3-button w3-left">Profile</a>
+    <a href="#" class="w3-bar-item w3-button w3-left">Education></a>
+    <a href="#" class="w3-bar-item w3-button w3-left">Backgrounds></a>
+    <a href="#" class="w3-bar-item w3-button w3-left">Training></a>
+    <a href="#" class="w3-bar-item w3-button w3-left">Projects></a>
+</div>
+
+  <header class="w3-header w3-container w3-amber w3-padding-232 w3-center" style="background-image:url(black.png);height:auto">
+    <h1>My Resume</h1>
+  </header>
+
+  <div id="profile" class="w3-container w3-row w3-light-grey w3-padding-32">
+      <div class="w3-container w3-third">
+        <h2>Profile</h2>
+      </div>
+      <div class="w3-container w3-twothird w3-amber">
+        <p>Passionate Programmer, Web designer, Database Administrator
+      </div>
+  </div>
+
+  <div id="education" class="w3-container w3-row w3-light-grey w3-padding-32">
+    <div class="w3-container w3-third">
+      <h2 style="color:rgb(153, 50, 205);">Education</h2>
+    </div>
+    <div class="w3-container w3-twothird w3-amber">
+      <ul class="w3-ul">
+        <li><b>Undergraduate</b><br>2020 - 2024<br>Bachelor of Science With Honours (Information Technology), Universiti Utara Malaysia</br></br></li>
+      </ul>
+    </div>
+</div>
+
+<div id="backgrounds" class="w3-container w3-row w3-light-grey w3-padding-32">
+  <div class="w3-container w3-third">
+    <h2>Backgrounds</h2>
+  </div>
+  <div class="w3-container w3-twothird w3-amber">
+    <ul class="w3-ul">
+      <li><b>Pre University</b><br>2018 - 2019<br>Pengajian Am - A<br>Economic - A <br>Account - A <br>Information, Communication and Technology - B</br></li>
+    </ul>
+  </div>
+</div>
+
+<div id="training" class="w3-container w3-row w3-light-grey w3-padding-32">
+  <div class="w3-container w3-third">
+    <h2>Training</h2>
+  </div>
+  <div class="w3-container w3-twothird w3-amber">
+    <ul class="w3-ul">
+      <li><b>Java Programming Workshop</b><br>Learn about the basic Java programming skills and technique in develop the system using Java language</br></li>
+    </ul>
+  </div>
+</div>
+
+<div id="projects" class="w3-container w3-row w3-light-grey w3-padding-32">
+  <div class="w3-container w3-third">
+    <h2>Projects</h2>
+  </div>
+  <div class="w3-container w3-twothird w3-amber">
+    <ul class="w3-ul">
+      <li><b>Car Rental System</b><br>The Car Rental System is the system that develop for the usage of the client to know about the details about the car that they want to rent. The details such as company background, car model, price, venue and others are listed</br></li>
+      <li><b>Tuition Center Management System</b><br>The Tuition Center Management System is the system developed for the employer to manage thier staff. The details such as staffs' name, salary, type of position are listed. The system allows the employer to key in info and store the info easily.</br></li>
+    </ul>
+  </div>
+</div>
+
+<footer> 
+  <p class="w3-center">
+    Copyright Ang Shu Khai&copy;
+  </p>
+</footer>
+</body>
+
+
+</html>
